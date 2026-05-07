@@ -1,0 +1,115 @@
+# docker-compose.yml — go-admin demo stack(zh-TW 學習教材配套)
+#
+# 配套教材:docs/superpowers/spec/2026-05-07-learning-docs.md
+#
+# 使用前必先 export 兩個絕對路徑(指向 host 上 clone 的兩個 repo):
+#   export GO_ADMIN_PATH=/abs/path/to/go-admin
+#   export GO_ADMIN_UI_PATH=/abs/path/to/go-admin-ui
+#
+# 啟動範例(從本 fork 根目錄):
+#   docker compose -f docs/superpowers/spec/docker-compose.yml up -d mysql
+#   docker compose -f docs/superpowers/spec/docker-compose.yml up migrate
+#   docker compose -f docs/superpowers/spec/docker-compose.yml up -d backend frontend
+#
+# 預期暴露 ports:
+#   8000 — backend API(供 host curl 除錯)
+#   8080 — frontend dev server(瀏覽器入口)
+#
+# 預期 host port 衝突:
+#   若 host 已有服務佔用 8000 / 8080,請先停掉,或改寫下方 ports 對映。
+
+name: go-admin-demo
+
+services:
+
+  # MySQL 8 — 資料持久化於 named volume `mysql-data`
+  mysql:
+    image: mysql:8.0
+    container_name: go-admin-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: go-admin
+      MYSQL_USER: go-admin
+      MYSQL_PASSWORD: go-admin123
+    volumes:
+      - mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-proot123"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+    command:
+      - --default-authentication-plugin=mysql_native_password
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --innodb-large-prefix=ON
+      - --innodb-default-row-format=DYNAMIC
+    networks: [demo]
+
+  # 一次性 migrate — 退出後不再啟動
+  migrate:
+    image: golang:1.22-alpine
+    container_name: go-admin-migrate
+    working_dir: /app
+    volumes:
+      - ${GO_ADMIN_PATH:?required: export GO_ADMIN_PATH=/abs/path/to/go-admin}:/app
+      - go-mod-cache:/go/pkg/mod
+    environment:
+      GOPROXY: https://goproxy.cn,direct
+      CGO_ENABLED: "0"
+    command: sh -c "go run main.go migrate -c config/settings.yml"
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks: [demo]
+
+  # backend — go run,live reload 由 host 編輯觸發(若 image 有 air 可換成熱重載)
+  backend:
+    image: golang:1.22-alpine
+    container_name: go-admin-backend
+    working_dir: /app
+    volumes:
+      - ${GO_ADMIN_PATH:?required: export GO_ADMIN_PATH=/abs/path/to/go-admin}:/app
+      - go-mod-cache:/go/pkg/mod
+    environment:
+      GOPROXY: https://goproxy.cn,direct
+      CGO_ENABLED: "0"
+    ports:
+      - "8000:8000"
+    command: sh -c "go run main.go server -c config/settings.yml"
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    networks: [demo]
+
+  # frontend — vue-cli dev server,首次啟動會自動 npm install
+  frontend:
+    image: node:16.15-alpine
+    container_name: go-admin-frontend
+    working_dir: /app
+    volumes:
+      - ${GO_ADMIN_UI_PATH:?required: export GO_ADMIN_UI_PATH=/abs/path/to/go-admin-ui}:/app
+      - node-modules-cache:/app/node_modules
+    environment:
+      VUE_APP_BASE_API: http://localhost:8000
+    ports:
+      - "8080:8080"
+    command: >
+      sh -c "
+        npm config set registry https://registry.npmmirror.com &&
+        npm install --no-audit --no-fund &&
+        npm run dev
+      "
+    depends_on:
+      backend:
+        condition: service_started
+    networks: [demo]
+
+volumes:
+  mysql-data:
+  go-mod-cache:
+  node-modules-cache:
+
+networks:
+  demo:
+    driver: bridge
