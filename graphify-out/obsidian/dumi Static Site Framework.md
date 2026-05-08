@@ -1,16 +1,17 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Doc Site Build"
+community: "Community None"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Doc_Site_Build
+  - community/Community_None
 ---
 
 # dumi Static Site Framework
 
 ## Connections
-- [[go-admin-doc Project]] - `cites` [EXTRACTED]
+- [[go-admin Introduction & Features]] - `cites` [EXTRACTED]
+- [[go-admin-doc Project README]] - `cites` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Doc_Site_Build
+#graphify/document #graphify/EXTRACTED #community/Community_None

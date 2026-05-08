@@ -1,17 +1,18 @@
 ---
 source_file: "docs/guide/vue-install.md"
 type: "document"
-community: "Setup & Repository Intro"
+community: "Community None"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_&_Repository_Intro
+  - community/Community_None
 ---
 
 # Node.js & npm Installation
 
 ## Connections
-- [[Golang Environment Installation]] - `semantically_similar_to` [INFERRED]
+- [[Golang Installation Tutorial]] - `semantically_similar_to` [INFERRED]
+- [[Node.js v14.17.0 Verification]] - `references` [EXTRACTED]
 - [[Quick Start Guide]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_&_Repository_Intro
+#graphify/document #graphify/EXTRACTED #community/Community_None

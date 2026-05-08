@@ -1,23 +1,22 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.33
+members: 7
 ---
 
 # SDK Runtime Core
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[Memory Queue]] - document - docs/intro/advanced/core.md
-- [[Memory Queue vs Professional MQ Rationale]] - document - docs/intro/advanced/core.md
-- [[Queue Adapter]] - document - docs/intro/advanced/core.md
-- [[Runtime DB Map (GetDbGetDbByKeySetDb)]] - document - docs/intro/advanced/core.md
-- [[SaveLoginLog Callback]] - document - docs/intro/advanced/core.md
-- [[SetConfigGetConfig]] - document - docs/intro/advanced/core.md
-- [[User Context Helpers (GetUserIdNameRoleDept)]] - document - docs/intro/advanced/core.md
-- [[sdk.Runtime]] - document - docs/intro/advanced/core.md
+- [[QueueAdapter (SetGetRegister)]] - code - docs/intro/advanced/core.md
+- [[Runtime DB APIs (GetDbGetDbByKeySetDb)]] - code - docs/intro/advanced/core.md
+- [[Runtime.GetConfig]] - code - docs/intro/advanced/core.md
+- [[Runtime.SetConfig]] - code - docs/intro/advanced/core.md
+- [[SaveLoginLog 回调示例]] - code - docs/intro/advanced/core.md
+- [[sdk.Runtime]] - code - docs/intro/advanced/core.md
+- [[内存队列 (GetMemoryQueue)]] - code - docs/intro/advanced/core.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_API Handlers & Service Layer]]
+- 1 edge to [[_COMMUNITY_API & Service Layer (apisrouterservicedtomodels)]]
 
 ## Top bridge nodes
-- [[User Context Helpers (GetUserIdNameRoleDept)]] - degree 2, connects to 1 community
+- [[sdk.Runtime]] - degree 6, connects to 1 community

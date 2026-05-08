@@ -1,16 +1,19 @@
 ---
-source_file: "docs/intro/advanced/advanced.md"
-type: "document"
-community: "Pro Code Generator"
+source_file: "docs/intro/advanced/tutorial0410.md"
+type: "code"
+community: "Community None"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Pro_Code_Generator
+  - community/Community_None
 ---
 
-# Article Table SQL Schema
+# article Table SQL Schema
 
 ## Connections
-- [[Code Generator Tool (开发工具生成代码)]] - `references` [EXTRACTED]
+- [[Article CRUD Functional Validation]] - `references` [EXTRACTED]
+- [[Codegen Configuration (gen.dbnamegen.frontpath)]] - `references` [EXTRACTED]
+- [[Memory Orphan Island Semantic Merge Recommendations]] - `cites` [EXTRACTED]
+- [[Table Structure Import Step]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pro_Code_Generator
+#graphify/code #graphify/EXTRACTED #community/Community_None

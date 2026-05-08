@@ -1,16 +1,16 @@
 ---
 source_file: "docs/guide/faq.md"
 type: "document"
-community: "FAQ & Troubleshooting"
+community: "Community None"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/FAQ_&_Troubleshooting
+  - community/Community_None
 ---
 
 # Error: requires at least one arg
 
 ## Connections
-- [[FAQ Index]] - `references` [EXTRACTED]
+- [[FAQ Troubleshooting]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/FAQ_&_Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/Community_None

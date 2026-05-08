@@ -1,17 +1,17 @@
 ---
 source_file: "docs/configure/tenant.md"
 type: "document"
-community: "Multi-tenant & Deployment"
+community: "Community None"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Multi-tenant_&_Deployment
+  - community/Community_None
 ---
 
-# Nginx Per-Host Reverse Proxy
+# Nginx per-host Reverse Proxy
 
 ## Connections
-- [[Multi-tenant Mode]] - `references` [EXTRACTED]
-- [[Nginx Configuration for go-admin]] - `semantically_similar_to` [INFERRED]
+- [[Multi-tenant Mode (databases per host)]] - `references` [EXTRACTED]
+- [[Nginx Reverse Proxy goadminapi - 8000]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Multi-tenant_&_Deployment
+#graphify/document #graphify/EXTRACTED #community/Community_None

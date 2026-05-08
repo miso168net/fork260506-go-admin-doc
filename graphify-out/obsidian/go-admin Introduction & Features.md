@@ -1,21 +1,20 @@
 ---
 source_file: "docs/guide/index.md"
 type: "document"
-community: "Setup & Repository Intro"
+community: "Community None"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_&_Repository_Intro
+  - community/Community_None
 ---
 
 # go-admin Introduction & Features
 
 ## Connections
-- [[Built-in Modules (UserDeptRoleMenuDict)]] - `references` [EXTRACTED]
-- [[Casbin RBAC Model]] - `references` [INFERRED]
-- [[Demo Environments (vue2vue3antd pro)]] - `references` [EXTRACTED]
-- [[Why go-admin (Rationale Reduce Boilerplate)]] - `rationale_for` [EXTRACTED]
-- [[go-admin Backend Repository]] - `cites` [EXTRACTED]
-- [[go-admin-ui View Repository]] - `cites` [EXTRACTED]
+- [[Casbin RBAC Access Control]] - `cites` [EXTRACTED]
+- [[Demo Environments (ElementArcoPro)]] - `references` [EXTRACTED]
+- [[Top God Nodes (from GRAPH_REPORT)]] - `references` [EXTRACTED]
+- [[dumi Static Site Framework]] - `cites` [EXTRACTED]
+- [[go-admin Built-in Features (UserMenuRoleetc.)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_&_Repository_Intro
+#graphify/document #graphify/EXTRACTED #community/Community_None

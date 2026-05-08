@@ -1,17 +1,17 @@
 ---
 source_file: "docs/guide/env.md"
 type: "document"
-community: "Go Environment & Modules"
+community: "Community None"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Go_Environment_&_Modules
+  - community/Community_None
 ---
 
 # GO111MODULE=on
 
 ## Connections
 - [[Go 1.16 Module Changes]] - `references` [EXTRACTED]
-- [[Go Environment Variables]] - `references` [EXTRACTED]
+- [[Go Modules Environment Variables]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Go_Environment_&_Modules
+#graphify/document #graphify/EXTRACTED #community/Community_None

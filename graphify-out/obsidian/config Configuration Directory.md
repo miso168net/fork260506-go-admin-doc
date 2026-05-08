@@ -1,0 +1,17 @@
+---
+source_file: "docs/intro/advanced/tutorial01.md"
+type: "document"
+community: "Community None"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Community_None
+---
+
+# config/ Configuration Directory
+
+## Connections
+- [[Backend settings.yml Configuration]] - `conceptually_related_to` [INFERRED]
+- [[go-admin Backend Directory Structure]] - `references` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Community_None

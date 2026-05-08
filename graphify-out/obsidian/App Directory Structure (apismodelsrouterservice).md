@@ -1,21 +1,18 @@
 ---
-source_file: "docs/intro/advanced/bus.md"
+source_file: "docs/guide/norm.md"
 type: "document"
-community: "API Handlers & Service Layer"
+community: "Community None"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/API_Handlers_&_Service_Layer
+  - community/Community_None
 ---
 
 # App Directory Structure (apis/models/router/service)
 
 ## Connections
-- [[API Module]] - `references` [EXTRACTED]
-- [[DTO Module]] - `references` [EXTRACTED]
-- [[Models Module]] - `references` [EXTRACTED]
-- [[Regular Mode Overview]] - `references` [EXTRACTED]
-- [[Router Module]] - `references` [EXTRACTED]
-- [[Service Module]] - `references` [EXTRACTED]
+- [[Dev Norms v1.4.0+]] - `references` [EXTRACTED]
+- [[Q1 App Directory Structure as Structural Contract]] - `rationale_for` [EXTRACTED]
+- [[Top God Nodes (from GRAPH_REPORT)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/API_Handlers_&_Service_Layer
+#graphify/document #graphify/EXTRACTED #community/Community_None

@@ -1,18 +1,18 @@
 ---
-source_file: "docs/guide/ksks.md"
+source_file: "docs/intro/advanced/config.md"
 type: "document"
-community: "Setup & Repository Intro"
+community: "Community None"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_&_Repository_Intro
+  - community/Community_None
 ---
 
 # config/settings.yml
 
 ## Connections
-- [[-c Config File Flag]] - `references` [EXTRACTED]
-- [[MySQL Key Length Issue & InnoDB Rationale]] - `rationale_for` [EXTRACTED]
-- [[Quick Start Guide]] - `references` [EXTRACTED]
+- [[configextend.go Extend struct]] - `references` [EXTRACTED]
+- [[server -c 配置文件参数]] - `references` [EXTRACTED]
+- [[多环境配置文件 (devprodtest)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_&_Repository_Intro
+#graphify/document #graphify/EXTRACTED #community/Community_None

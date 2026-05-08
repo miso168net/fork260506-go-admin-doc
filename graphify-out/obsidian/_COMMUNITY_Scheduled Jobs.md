@@ -1,21 +1,21 @@
 ---
 type: community
-cohesion: 0.40
+cohesion: 0.33
 members: 6
 ---
 
 # Scheduled Jobs
 
-**Cohesion:** 0.40 - moderately connected
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
-- [[ExamplesOne Struct]] - document - docs/intro/advanced/jobs.md
-- [[ExecJob Function Type]] - document - docs/intro/advanced/jobs.md
-- [[HttpJob Interface Type]] - document - docs/intro/advanced/jobs.md
-- [[InitJob Registration]] - document - docs/intro/advanced/jobs.md
-- [[JobCore Interface]] - document - docs/intro/advanced/jobs.md
-- [[Scheduled Jobs]] - document - docs/intro/advanced/jobs.md
+- [[ExamplesOne 示例]] - code - docs/intro/advanced/jobs.md
+- [[ExecJob 函数类型]] - code - docs/intro/advanced/jobs.md
+- [[HttpJob 接口类型]] - code - docs/intro/advanced/jobs.md
+- [[InitJob 注册函数]] - code - docs/intro/advanced/jobs.md
+- [[JobCore 接口]] - code - docs/intro/advanced/jobs.md
+- [[定时任务]] - document - docs/intro/advanced/jobs.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,91 +1,21 @@
 {
   "colorGroups": [
     {
-      "query": "tag:#community/API_Handlers_&_Service_Layer",
+      "query": "tag:#community/Project_Directory_Structure_(backend_+_frontend)",
       "color": {
         "a": 1,
         "rgb": 5142951
       }
     },
     {
-      "query": "tag:#community/Setup_&_Repository_Intro",
+      "query": "tag:#community/Docker_Compose_Quick_Start_Tutorial",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/Frontend_Setup_Tutorials",
-      "color": {
-        "a": 1,
-        "rgb": 14767961
-      }
-    },
-    {
-      "query": "tag:#community/Pro_Code_Generator",
-      "color": {
-        "a": 1,
-        "rgb": 7780274
-      }
-    },
-    {
-      "query": "tag:#community/Code_Generation_Tutorial",
-      "color": {
-        "a": 1,
-        "rgb": 5873999
-      }
-    },
-    {
-      "query": "tag:#community/Multi-tenant_&_Deployment",
-      "color": {
-        "a": 1,
-        "rgb": 15583560
-      }
-    },
-    {
-      "query": "tag:#community/Database_Models_&_Drivers",
-      "color": {
-        "a": 1,
-        "rgb": 11565729
-      }
-    },
-    {
-      "query": "tag:#community/Routing_&_Auth_Middleware",
-      "color": {
-        "a": 1,
-        "rgb": 16752039
-      }
-    },
-    {
-      "query": "tag:#community/Migration_System",
-      "color": {
-        "a": 1,
-        "rgb": 10253663
-      }
-    },
-    {
-      "query": "tag:#community/SDK_Runtime_Core",
-      "color": {
-        "a": 1,
-        "rgb": 12234924
-      }
-    },
-    {
-      "query": "tag:#community/FAQ_&_Troubleshooting",
-      "color": {
-        "a": 1,
-        "rgb": 5142951
-      }
-    },
-    {
-      "query": "tag:#community/Dev_Norms_&_App_Command",
-      "color": {
-        "a": 1,
-        "rgb": 15896107
-      }
-    },
-    {
-      "query": "tag:#community/Pro_Edition_&_Bricks",
+      "query": "tag:#community/go-admin_Introduction_&_Features",
       "color": {
         "a": 1,
         "rgb": 14767961
@@ -99,49 +29,119 @@
       }
     },
     {
-      "query": "tag:#community/Scheduled_Jobs",
+      "query": "tag:#community/Fork_Meta_&_Graphify_Rules",
       "color": {
         "a": 1,
         "rgb": 5873999
       }
     },
     {
-      "query": "tag:#community/Air_Hot_Reload",
+      "query": "tag:#community/Multi-tenant_&_Deployment",
       "color": {
         "a": 1,
         "rgb": 15583560
       }
     },
     {
-      "query": "tag:#community/Fork_Branch_Origin",
+      "query": "tag:#community/Code_Generation_Workflow",
       "color": {
         "a": 1,
         "rgb": 11565729
       }
     },
     {
-      "query": "tag:#community/Bus_Processing_Modes",
+      "query": "tag:#community/Docker_Compose_Stack_Definition",
       "color": {
         "a": 1,
         "rgb": 16752039
       }
     },
     {
-      "query": "tag:#community/Config_System",
+      "query": "tag:#community/Server_Command_&_Config",
       "color": {
         "a": 1,
         "rgb": 10253663
       }
     },
     {
-      "query": "tag:#community/Doc_Site_Build",
+      "query": "tag:#community/Codegen_UI_&_Examples",
       "color": {
         "a": 1,
         "rgb": 12234924
       }
     },
     {
-      "query": "tag:#community/Swagger_Docs",
+      "query": "tag:#community/DTO_&_Search_Module",
+      "color": {
+        "a": 1,
+        "rgb": 5142951
+      }
+    },
+    {
+      "query": "tag:#community/DTO_Foundations_+_Update_Pipeline",
+      "color": {
+        "a": 1,
+        "rgb": 15896107
+      }
+    },
+    {
+      "query": "tag:#community/Module_Roots_+_Read_Path_(Get)_+_Swagger",
+      "color": {
+        "a": 1,
+        "rgb": 14767961
+      }
+    },
+    {
+      "query": "tag:#community/Scheduled_Jobs",
+      "color": {
+        "a": 1,
+        "rgb": 7780274
+      }
+    },
+    {
+      "query": "tag:#community/Migration_System",
+      "color": {
+        "a": 1,
+        "rgb": 5873999
+      }
+    },
+    {
+      "query": "tag:#community/Pro_Edition_&_Pricing",
+      "color": {
+        "a": 1,
+        "rgb": 15583560
+      }
+    },
+    {
+      "query": "tag:#community/IDE_Setup_(Goland/VS_Code)",
+      "color": {
+        "a": 1,
+        "rgb": 11565729
+      }
+    },
+    {
+      "query": "tag:#community/Insert/Delete_Path_+_User_Audit_Context",
+      "color": {
+        "a": 1,
+        "rgb": 16752039
+      }
+    },
+    {
+      "query": "tag:#community/App_&_Install_Commands",
+      "color": {
+        "a": 1,
+        "rgb": 10253663
+      }
+    },
+    {
+      "query": "tag:#community/Models_Layer_(SysPost_+_Interfaces)",
+      "color": {
+        "a": 1,
+        "rgb": 12234924
+      }
+    },
+    {
+      "query": "tag:#community/SpecKit_Plan_Reference",
       "color": {
         "a": 1,
         "rgb": 5142951
@@ -155,10 +155,45 @@
       }
     },
     {
-      "query": "tag:#community/Config_Command",
+      "query": "tag:#community/Supported_DB_Drivers",
       "color": {
         "a": 1,
         "rgb": 14767961
+      }
+    },
+    {
+      "query": "tag:#community/Config_Command_Placeholder",
+      "color": {
+        "a": 1,
+        "rgb": 7780274
+      }
+    },
+    {
+      "query": "tag:#community/(singleton)_SpecKit_Plan_Reference",
+      "color": {
+        "a": 1,
+        "rgb": 5873999
+      }
+    },
+    {
+      "query": "tag:#community/(singleton)_Help_Page_Placeholder",
+      "color": {
+        "a": 1,
+        "rgb": 15583560
+      }
+    },
+    {
+      "query": "tag:#community/(singleton)_\u652f\u6301\u7684_DB_(mysql/sqlite3/postgres)",
+      "color": {
+        "a": 1,
+        "rgb": 11565729
+      }
+    },
+    {
+      "query": "tag:#community/(singleton)_config_\u6307\u4ee4_(\u66f4\u65b0\u4e2d)",
+      "color": {
+        "a": 1,
+        "rgb": 16752039
       }
     }
   ]

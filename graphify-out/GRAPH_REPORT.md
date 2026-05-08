@@ -1,191 +1,192 @@
-# Graph Report - .  (2026-05-06)
+# Graph Report - .  (2026-05-08)
 
 ## Corpus Check
-- Corpus is ~9,826 words - fits in a single context window. You may not need a graph.
+- 58 files · ~14,584 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 222 nodes · 239 edges · 23 communities detected
-- Extraction: 91% EXTRACTED · 9% INFERRED · 0% AMBIGUOUS · INFERRED: 21 edges (avg confidence: 0.8)
-- Token cost: 0 input · 0 output
+- 242 nodes · 286 edges · 28 communities (23 shown, 5 thin omitted)
+- Extraction: 92% EXTRACTED · 8% INFERRED · 0% AMBIGUOUS · INFERRED: 22 edges (avg confidence: 0.83)
+- Token cost: 176,455 input · 44,113 output
 
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_API Handlers & Service Layer|API Handlers & Service Layer]]
-- [[_COMMUNITY_Setup & Repository Intro|Setup & Repository Intro]]
-- [[_COMMUNITY_Frontend Setup Tutorials|Frontend Setup Tutorials]]
-- [[_COMMUNITY_Pro Code Generator|Pro Code Generator]]
-- [[_COMMUNITY_Code Generation Tutorial|Code Generation Tutorial]]
-- [[_COMMUNITY_Multi-tenant & Deployment|Multi-tenant & Deployment]]
-- [[_COMMUNITY_Database Models & Drivers|Database Models & Drivers]]
-- [[_COMMUNITY_Routing & Auth Middleware|Routing & Auth Middleware]]
-- [[_COMMUNITY_Migration System|Migration System]]
-- [[_COMMUNITY_SDK Runtime Core|SDK Runtime Core]]
-- [[_COMMUNITY_FAQ & Troubleshooting|FAQ & Troubleshooting]]
-- [[_COMMUNITY_Dev Norms & App Command|Dev Norms & App Command]]
-- [[_COMMUNITY_Pro Edition & Bricks|Pro Edition & Bricks]]
+- [[_COMMUNITY_Fork Meta & Graphify Rules|Fork Meta & Graphify Rules]]
+- [[_COMMUNITY_(singleton) SpecKit Plan Reference|(singleton) SpecKit Plan Reference]]
+- [[_COMMUNITY_go-admin Introduction & Features|go-admin Introduction & Features]]
 - [[_COMMUNITY_Go Environment & Modules|Go Environment & Modules]]
+- [[_COMMUNITY_(singleton) Help Page Placeholder|(singleton) Help Page Placeholder]]
+- [[_COMMUNITY_App & Install Commands|App & Install Commands]]
+- [[_COMMUNITY_Multi-tenant & Deployment|Multi-tenant & Deployment]]
 - [[_COMMUNITY_Scheduled Jobs|Scheduled Jobs]]
-- [[_COMMUNITY_Air Hot Reload|Air Hot Reload]]
-- [[_COMMUNITY_Fork Branch Origin|Fork Branch Origin]]
-- [[_COMMUNITY_Bus Processing Modes|Bus Processing Modes]]
-- [[_COMMUNITY_Config System|Config System]]
-- [[_COMMUNITY_Doc Site Build|Doc Site Build]]
-- [[_COMMUNITY_Swagger Docs|Swagger Docs]]
+- [[_COMMUNITY_SpecKit Plan Reference|SpecKit Plan Reference]]
+- [[_COMMUNITY_Codegen UI & Examples|Codegen UI & Examples]]
+- [[_COMMUNITY_Server Command & Config|Server Command & Config]]
 - [[_COMMUNITY_Help Placeholder|Help Placeholder]]
-- [[_COMMUNITY_Config Command|Config Command]]
+- [[_COMMUNITY_Module Roots + Read Path (Get) + Swagger|Module Roots + Read Path (Get) + Swagger]]
+- [[_COMMUNITY_DTO & Search Module|DTO & Search Module]]
+- [[_COMMUNITY_InsertDelete Path + User Audit Context|Insert/Delete Path + User Audit Context]]
+- [[_COMMUNITY_DTO Foundations + Update Pipeline|DTO Foundations + Update Pipeline]]
+- [[_COMMUNITY_Migration System|Migration System]]
+- [[_COMMUNITY_Config Command Placeholder|Config Command Placeholder]]
+- [[_COMMUNITY_(singleton) 支持的 DB (mysqlsqlite3postgres)|(singleton) 支持的 DB (mysql/sqlite3/postgres)]]
+- [[_COMMUNITY_Pro Edition & Pricing|Pro Edition & Pricing]]
+- [[_COMMUNITY_Models Layer (SysPost + Interfaces)|Models Layer (SysPost + Interfaces)]]
+- [[_COMMUNITY_Supported DB Drivers|Supported DB Drivers]]
+- [[_COMMUNITY_(singleton) config 指令 (更新中)|(singleton) config 指令 (更新中)]]
+- [[_COMMUNITY_IDE Setup (GolandVS Code)|IDE Setup (Goland/VS Code)]]
+- [[_COMMUNITY_Project Directory Structure (backend + frontend)|Project Directory Structure (backend + frontend)]]
+- [[_COMMUNITY_Docker Compose Quick Start Tutorial|Docker Compose Quick Start Tutorial]]
+- [[_COMMUNITY_Code Generation Workflow|Code Generation Workflow]]
+- [[_COMMUNITY_Docker Compose Stack Definition|Docker Compose Stack Definition]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `Service Module` - 10 edges
-2. `Quick Start Guide` - 9 edges
-3. `DTO Module` - 9 edges
-4. `go-admin Landing Page` - 8 edges
-5. `API Module` - 8 edges
-6. `服务端配置文件 settings.yml` - 8 edges
-7. `Router Module` - 7 edges
-8. `go-admin Introduction & Features` - 6 edges
-9. `App Directory Structure (apis/models/router/service)` - 6 edges
-10. `Pro Code Generator Tool` - 6 edges
+1. `Quick Start Guide` - 12 edges
+2. `SysPost models 结构体` - 12 edges
+3. `Backend settings.yml Configuration` - 11 edges
+4. `go-admin Quick Start with Docker Compose Tutorial` - 10 edges
+5. `api 模块` - 9 edges
+6. `compose service: backend (golang:1.22-alpine)` - 9 edges
+7. `go-admin-pro 代码生成工具` - 8 edges
+8. `compose service: migrate (one-shot)` - 8 edges
+9. `compose service: frontend (node:16.15-alpine)` - 8 edges
+10. `Production Deployment Guide` - 7 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `article 表 SQL 创建脚本` --semantically_similar_to--> `创建文章功能示例`  [INFERRED] [semantically similar]
-  docs/intro/advanced/tutorial0410.md → docs/intro/advanced/tutorial0310.md
-- `User Context Helpers (GetUserId/Name/Role/Dept)` --semantically_similar_to--> `jwtauth/user Package`  [INFERRED] [semantically similar]
-  docs/intro/advanced/core.md → docs/intro/advanced/api.md
-- `go-admin Introduction & Features` --references--> `Casbin RBAC Model`  [INFERRED]
-  docs/guide/index.md → docs/index.md
-- `Business DB Sharding` --semantically_similar_to--> `Multi-tenant Mode`  [INFERRED] [semantically similar]
-  docs/configure/index.md → docs/configure/tenant.md
-- `Nginx Configuration for go-admin` --semantically_similar_to--> `Nginx Per-Host Reverse Proxy`  [INFERRED] [semantically similar]
-  docs/guide/xmbs.md → docs/configure/tenant.md
+- `dumi Static Site Framework` --cites--> `go-admin Introduction & Features`  [EXTRACTED]
+  README.md → docs/guide/index.md
+- `Q2 Quick Start as Temporal Script Bridge` --rationale_for--> `Quick Start Guide`  [EXTRACTED]
+  x_fork.graphify-20260506.md → docs/guide/ksks.md
+- `Top God Nodes (from GRAPH_REPORT)` --references--> `Quick Start Guide`  [EXTRACTED]
+  x_fork.tree-20260506.md → docs/guide/ksks.md
+- `admin Module (apis/models/router/service)` --cites--> `Memory: Orphan Island Semantic Merge Recommendations`  [EXTRACTED]
+  docs/intro/advanced/tutorial01.md → graphify-out/memory/query_20260505_185846_which_orphan_islands_should_be_merged_with_semanti.md
+- `Backend settings.yml Configuration` --semantically_similar_to--> `.env.development / .env.production`  [INFERRED] [semantically similar]
+  docs/intro/advanced/tutorial02.md → docs/intro/advanced/tutorial0220.md
 
 ## Hyperedges (group relationships)
-- **go-admin CLI Command Set** — app_app_command, config_config_command, install_install_command, migrate_migrate_command, server_server_command [EXTRACTED 0.95]
-- **Quick Start Setup Flow** — env_environment_variables, goinstall_go_environment_install, ksks_quick_start, ksks_migrate_command, ksks_server_command, vueinstall_node_npm_install [EXTRACTED 0.90]
-- **Deployment Pipeline (build/upload/restart/nginx)** — xmbs_shell_packaging, xmbs_cross_compile, xmbs_nginx_config, xmbs_vue_build, xmbs_docker_packaging [EXTRACTED 0.90]
-- **Regular Mode Layered Architecture (api/router/service/dto/models)** — api_api_module, router_router_module, service_service_module, dto_dto_module, models_models_module [EXTRACTED 0.95]
-- **SysPost CRUD Request Flow (handler -> dto -> service -> model)** — api_insert_handler, dto_syspostinsertreq, service_insert_func, models_syspost_model [EXTRACTED 0.90]
-- **Memory Queue Event Pipeline (Runtime + Queue + Adapter + Callback)** — core_runtime, core_memory_queue, core_queue_adapter, core_savelogginglog_callback [EXTRACTED 0.90]
-- **代码生成完整流程** — tutorial0410_codegen_config, tutorial0420_codegen, tutorial0430_menu_config, tutorial0440_menu_api_binding, tutorial0450_role_permission, tutorial0460_function_verify [EXTRACTED 0.95]
-- **前端搭建工作流 (目录/配置/启动)** — tutorial0210_ui_directory_structure, tutorial0220_env_config, tutorial0230_frontend_startup [EXTRACTED 0.90]
-- **服务端搭建工作流 (目录/配置/启动)** — tutorial01_directory_structure, tutorial02_config_file, tutorial03_api_startup [EXTRACTED 0.90]
+- **Quick Start End-to-End Flow** — env_go_modules_environment, goinstall_golang_install, ksks_quick_start_guide, ksks_migrate_command, ksks_server_command, ksks_npm_run_dev [EXTRACTED 0.95]
+- **App Directory Structural Contract** — norm_app_directory_structure, graphify_qa_app_directory_bridge, tree_god_nodes_table [EXTRACTED 0.90]
+- **Production Deploy Stack (Settings/Nginx/Build)** — xmbs_settings_yml_production, xmbs_nginx_reverse_proxy, xmbs_shell_build_pipeline, xmbs_env_production_base_api [EXTRACTED 0.90]
+- **SysPost CRUD 业务链 (router→api→service→dto→models)** — router_module, api_getpage_func, service_getpage, dto_pagereq, models_syspost [EXTRACTED 1.00]
+- **go-admin 分层架构 (apis/models/router/service/dto)** — bus_app_structure, api_module, models_module, router_module, service_module, dto_module [EXTRACTED 1.00]
+- **Job 注册执行流程** — jobs_jobcore_iface, jobs_examplesone, jobs_initjob [EXTRACTED 1.00]
+- **6-Step Codegen Tutorial Flow (0410-0460)** — tutorial0410_codegen_settings, tutorial0420_codegen_workflow, tutorial0430_one_click_menu, tutorial0440_menu_api_binding, tutorial0450_role_permissions, tutorial0460_crud_validation [EXTRACTED 1.00]
+- **Compose Dependency Chain (mysql -> migrate -> backend -> frontend)** — compose_service_mysql, compose_service_migrate, compose_service_backend, compose_service_frontend [EXTRACTED 1.00]
+- **Learning Docs 7 Phases (0-6)** — learning_docs_phase0_precheck, learning_docs_phase1_clone, learning_docs_phase2_settings, learning_docs_phase3_compose, learning_docs_phase4_up, learning_docs_phase5_login, learning_docs_phase6_teardown [EXTRACTED 1.00]
 
-## Communities
+## Communities (28 total, 5 thin omitted)
 
-### Community 0 - "API Handlers & Service Layer"
-Cohesion: 0.09
-Nodes (34): API Module, Delete Handler, Get Handler, GetPage Handler, gin-gonic/gin Framework, Insert Handler, jwtauth/user Package, MakeContext/MakeOrm/MakeService Chain (+26 more)
-
-### Community 1 - "Setup & Repository Intro"
-Cohesion: 0.08
-Nodes (28): Golang Environment Installation, Golang Official Download, Built-in Modules (User/Dept/Role/Menu/Dict), Demo Environments (vue2/vue3/antd pro), Why go-admin (Rationale: Reduce Boilerplate), go-admin Backend Repository, go-admin-ui View Repository, go-admin Introduction & Features (+20 more)
-
-### Community 2 - "Frontend Setup Tutorials"
-Cohesion: 0.1
-Nodes (24): admin 应用模块 (apis/models/router/service), app 应用文件夹, go-admin 目录结构, jobs 自动化作业模块, src 源码目录 (api/components/router/store/views), go-admin-ui 目录结构, 开发与生产环境配置切换, 前端环境变量配置 (.env.development/.env.production) (+16 more)
-
-### Community 3 - "Pro Code Generator"
-Cohesion: 0.13
-Nodes (16): Article Table SQL Schema, -a Check API Flag, Code Generator Tool (开发工具生成代码), Role Menu Authorization, Access.ts Preview, Agent Startup, Code Preview, Custom Form (开发中) (+8 more)
-
-### Community 4 - "Code Generation Tutorial"
+### Community 4 - "Fork Meta & Graphify Rules"
 Cohesion: 0.14
-Nodes (15): 代码生成 gen 配置, article 表 SQL 创建脚本, 代码生成配置修改, go-admin 与 go-admin-ui 同级目录约束 (rationale), 代码生成 (带权限/不带权限), 预览生成代码, 代码生成流程, 表结构导入 (+7 more)
+Nodes (14): graphify Rules for Claude Code, main branch origin record (2026-05-06), Rename default branch to main, miso168net/fork260506-go-admin-doc, go-admin-team/go-admin-doc, Source HEAD 424855a, graphify session 2026-05-06, graphify Pipeline (Detect/AST/Semantic/Cluster) (+6 more)
+
+### Community 2 - "go-admin Introduction & Features"
+Cohesion: 0.12
+Nodes (18): go-admin-doc Project README, dumi Static Site Framework, Yarn install/start/build workflow, Q1 App Directory Structure as Structural Contract, Top God Nodes (from GRAPH_REPORT), go-admin Landing Page, Casbin RBAC Access Control, gin / vue / react Tech Stack (+10 more)
+
+### Community 3 - "Go Environment & Modules"
+Cohesion: 0.15
+Nodes (16): Q2 Quick Start as Temporal Script Bridge, Go Modules Environment Variables, GO111MODULE=on, GOPROXY=https://goproxy.cn, Golang Installation Tutorial, go version verification (1.24.2), Go Modules System, go mod init (+8 more)
+
+### Community 18 - "App & Install Commands"
+Cohesion: 0.5
+Nodes (4): go-admin-pro V1 Paid Edition, Pluggable Brick System, Edition Comparison Table, Pricing Tiers (Personal/Team/Enterprise)
 
 ### Community 5 - "Multi-tenant & Deployment"
 Cohesion: 0.15
-Nodes (13): Business DB Sharding, GORM registers/replicas Config, Why Built-in Sharding (Rationale), databases YAML Config (per-host), Multi-tenant Mode, Nginx Per-Host Reverse Proxy, No Secondary Dev Required (Rationale), Go Cross-compilation (Mac/Linux/Windows) (+5 more)
+Nodes (14): Business DB Sharding (registers/replicas/tables), gorm-based database registers config, Multi-tenant Mode (databases per host), Nginx per-host Reverse Proxy, VUE_APP_BASE_API empty for multi-tenant, settings.dev.yml Local Override, Production Deployment Guide, Shell-based Build & SCP Pipeline (+6 more)
 
-### Community 6 - "Database Models & Drivers"
-Cohesion: 0.2
-Nodes (10): Database Specification, deleted_at Recycle Bin Rationale, MySQL Driver Config, Postgres Driver Config, Special Fields (id/create_by/update_by/created_at/updated_at/deleted_at), SQLite3 Driver Config, ActiveRecord Interface, ControlBy and ModelTime Embedded (+2 more)
-
-### Community 7 - "Routing & Auth Middleware"
-Cohesion: 0.22
-Nodes (10): apis.Api Base Struct, SysPost API Struct, Anonymous Access, AuthCheckRole Middleware, authMiddleware (JWT), Login-only Authentication, register{业务}Router Naming Convention, Role-based Authentication (+2 more)
-
-### Community 8 - "Migration System"
+### Community 13 - "Scheduled Jobs"
 Cohesion: 0.25
-Nodes (8): migrate Command, Why Separate version vs version-local (Rationale), migrate Command, cmd/migrate/migration Directory Layout, SQL Seed Data Pattern, sys_migration Tracking Table, version-local New Migrations, version System Migrations (read-only)
+Nodes (8): FAQ Troubleshooting, CGO Windows Build Issue (go-sqlite3), MinGW-W64 GCC-8.1.0, Mac Xcode CLT Missing Error, MySQL connection refused 127.0.0.1:3306, Dart Sass / division Deprecation, Error: requires at least one arg, MySQL 8.0+ Required (key length)
 
-### Community 9 - "SDK Runtime Core"
-Cohesion: 0.25
-Nodes (8): Runtime DB Map (GetDb/GetDbByKey/SetDb), Memory Queue, Memory Queue vs Professional MQ Rationale, Queue Adapter, sdk.Runtime, SaveLoginLog Callback, SetConfig/GetConfig, User Context Helpers (GetUserId/Name/Role/Dept)
-
-### Community 10 - "FAQ & Troubleshooting"
-Cohesion: 0.29
-Nodes (7): CGO Issue on Windows, FAQ Index, MinGW-W64 GCC-8.1.0 Solution, MySQL Connect Refused Issue, Error: requires at least one arg, Dart Sass / Division Deprecation, macOS Xcode CLT Missing
-
-### Community 11 - "Dev Norms & App Command"
-Cohesion: 0.29
-Nodes (7): app Command, App Concept (project module separation), createapp -> app Rename Rationale, Code Norm (imports, function naming), Development Norms (v1.4.0+), Directory Layout (apis/models/router/service), Router Norm (api/{version}/{module}/{name})
-
-### Community 12 - "Pro Edition & Bricks"
-Cohesion: 0.33
-Nodes (6): install Command (go-admin-pro), Pluggable Brick Modules (Cron/OXS/CMS/Workflow), License & Disclaimer Statements, Edition Comparison Table, go-admin-pro V1, Pricing Tier Rationale
-
-### Community 13 - "Go Environment & Modules"
-Cohesion: 0.4
-Nodes (6): Go Environment Variables, GO111MODULE=on, GOPROXY=https://goproxy.cn, Go 1.16 Module Changes, go.mod Description File, Go Modules System
-
-### Community 14 - "Scheduled Jobs"
-Cohesion: 0.4
-Nodes (6): ExamplesOne Struct, ExecJob Function Type, HttpJob Interface Type, InitJob Registration, JobCore Interface, Scheduled Jobs
-
-### Community 15 - "Air Hot Reload"
-Cohesion: 0.4
-Nodes (5): Air Hot Reload, .air.toml Configuration File, github.com/cosmtrek/air Package, Run Block, Watcher Block
-
-### Community 16 - "Fork Branch Origin"
-Cohesion: 0.5
-Nodes (4): miso168net Fork Repository, main Branch Origin Record, Unify Default Branch as main (Rationale), go-admin-team/go-admin-doc Upstream
-
-### Community 17 - "Bus Processing Modes"
-Cohesion: 0.5
-Nodes (4): Actions Mode, Regular Mode (常规模式), Regular Mode Overview, Two Processing Modes Rationale
-
-### Community 18 - "Config System"
-Cohesion: 0.5
-Nodes (4): Environment-specific Config Files, config/extend.go File, Extend Configuration Node, settings.yml Configuration
-
-### Community 19 - "Doc Site Build"
+### Community 20 - "SpecKit Plan Reference"
 Cohesion: 0.67
-Nodes (3): dumi Static Site Framework, go-admin-doc Project, Yarn Development Workflow
+Nodes (3): IDE Configuration (Goland/VS Code), Goland HelloWorld Setup, VS Code HelloWorld Setup
 
-### Community 20 - "Swagger Docs"
-Cohesion: 1.0
-Nodes (2): go generate Command, Swagger Documentation
+### Community 9 - "Codegen UI & Examples"
+Cohesion: 0.17
+Nodes (12): actions 模式, 开发工具生成代码并配置角色授权操作, article 表 SQL 示例, 常规模式, go-admin-pro 代码生成工具, go-admin-agent 启动, 表结构准备 (在线/Sql/Json), 字典下拉框配置 (+4 more)
+
+### Community 8 - "Server Command & Config"
+Cohesion: 0.15
+Nodes (13): -a check api 参数, config/settings.yml, 多环境配置文件 (dev/prod/test), config/extend.go Extend struct, router 模块, register{业务名称}Router 命名规范, authMiddleware (jwt.GinJWTMiddleware), middleware.AuthCheckRole (+5 more)
 
 ### Community 21 - "Help Placeholder"
-Cohesion: 1.0
-Nodes (1): Help Page (placeholder)
+Cohesion: 0.67
+Nodes (3): Air 热加载, .air.toml 配置文件, go get -u github.com/cosmtrek/air
 
-### Community 22 - "Config Command"
-Cohesion: 1.0
-Nodes (1): config Command
+### Community 12 - "Module Roots + Read Path (Get) + Swagger"
+Cohesion: 0.25
+Nodes (9): api 模块, SysFileDir struct (apis.Api), SysPost.Get 接口函数, app 文件夹结构 (apis/models/router/service), models 模块, service 模块, service.SysPost, service.SysPost.Get (+1 more)
+
+### Community 10 - "DTO & Search Module"
+Cohesion: 0.2
+Nodes (11): SysPost.GetPage 接口函数, MakeContext.MakeOrm.Bind.MakeService 链式调用, dto 数据传输模块, Search 模块 (GetNeedSearch / gorm scope), search struct tag (type/column/table), search type 列表 (exact/contains/gt/lt/in/isnull/order/join...), SysPostPageReq, common dto.Pagination (+3 more)
+
+### Community 17 - "Insert/Delete Path + User Audit Context"
+Cohesion: 0.4
+Nodes (5): SysPost.Insert 接口函数, SysPost.Delete 接口函数, user 上下文 API (GetUserId/GetUserName/GetRoleId/GetRoleKey/GetRoleName/GetDeptId/GetDeptName), service.SysPost.Insert, service.SysPost.Remove
+
+### Community 11 - "DTO Foundations + Update Pipeline"
+Cohesion: 0.31
+Nodes (10): SysPost.Update 接口函数, SysPostInsertReq, SysPostUpdateReq, SysPostGetReq, SysPostDeleteReq, Generate 模型转换方法, GetId 方法, common.ControlBy (+2 more)
+
+### Community 14 - "Migration System"
+Cohesion: 0.33
+Nodes (7): sdk.Runtime, Runtime.SetConfig, Runtime.GetConfig, 内存队列 (GetMemoryQueue), QueueAdapter (Set/Get/Register), SaveLoginLog 回调示例, Runtime DB APIs (GetDb/GetDbByKey/SetDb)
+
+### Community 15 - "Pro Edition & Pricing"
+Cohesion: 0.33
+Nodes (6): 定时任务, HttpJob 接口类型, ExecJob 函数类型, JobCore 接口, ExamplesOne 示例, InitJob 注册函数
+
+### Community 19 - "Models Layer (SysPost + Interfaces)"
+Cohesion: 0.5
+Nodes (4): SysPost models 结构体, TableName 函数, models.ActiveRecord 接口, models.ModelTime
+
+### Community 22 - "Supported DB Drivers"
+Cohesion: 0.67
+Nodes (3): app 指令, app 概念 (业务隔离), install 指令 (go-admin-pro)
+
+### Community 16 - "IDE Setup (Goland/VS Code)"
+Cohesion: 0.33
+Nodes (6): migrate 指令, migration 目录结构 (version/version-local), migrate flags (-c/-d/-g/-a/-h), migration.Migrate.SetVersion, sys_migration 表, 预置表数据迁移流程
+
+### Community 0 - "Project Directory Structure (backend + frontend)"
+Cohesion: 0.1
+Nodes (22): go-admin Backend Directory Structure, app Folder (admin + jobs), jobs Module (Automated Jobs), main.go Entry Point, config/ Configuration Directory, Backend settings.yml Configuration, settings.application Block (mode/host/port), settings.database Block (driver/source DSN) (+14 more)
+
+### Community 1 - "Docker Compose Quick Start Tutorial"
+Cohesion: 0.1
+Nodes (20): admin Module (apis/models/router/service), Article API Example (apis/article.go), Article Router (router/article.go), GetArticleList Handler, registerArticleRouter Function, gin-gonic/gin, go-admin-core/sdk/pkg/jwtauth, Router Path & Handlers Convention (+12 more)
+
+### Community 6 - "Code Generation Workflow"
+Cohesion: 0.16
+Nodes (14): settings.gen Block (dbname/frontpath), Codegen Configuration (gen.dbname/gen.frontpath), article Table SQL Schema, go-admin & go-admin-ui Sibling Directory Constraint, Codegen Workflow (Import / Edit / Preview / Generate), Table Structure Import Step, Codegen with Permissions Variant, One-Click Menu Generation (+6 more)
+
+### Community 7 - "Docker Compose Stack Definition"
+Cohesion: 0.27
+Nodes (14): Phase 4 Stack Startup (mysql/migrate/backend/frontend), go-admin-demo Compose Stack, compose service: mysql (mysql:8.0), compose service: migrate (one-shot), compose service: backend (golang:1.22-alpine), compose service: frontend (node:16.15-alpine), named volume: mysql-data, named volume: go-mod-cache (+6 more)
 
 ## Knowledge Gaps
-- **110 isolated node(s):** `dumi Static Site Framework`, `Yarn Development Workflow`, `miso168net Fork Repository`, `go-admin-team/go-admin-doc Upstream`, `Unify Default Branch as main (Rationale)` (+105 more)
+- **117 isolated node(s):** `graphify Rules for Claude Code`, `SpecKit Plan Reference`, `Yarn install/start/build workflow`, `Rename default branch to main`, `miso168net/fork260506-go-admin-doc` (+112 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **Thin community `Swagger Docs`** (2 nodes): `go generate Command`, `Swagger Documentation`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Help Placeholder`** (1 nodes): `Help Page (placeholder)`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Config Command`** (1 nodes): `config Command`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `App Directory Structure (apis/models/router/service)` connect `API Handlers & Service Layer` to `Bus Processing Modes`, `Routing & Auth Middleware`?**
-  _High betweenness centrality (0.039) - this node is a cross-community bridge._
-- **Why does `Quick Start Guide` connect `Setup & Repository Intro` to `Migration System`, `Go Environment & Modules`?**
-  _High betweenness centrality (0.028) - this node is a cross-community bridge._
-- **What connects `dumi Static Site Framework`, `Yarn Development Workflow`, `miso168net Fork Repository` to the rest of the system?**
-  _110 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `API Handlers & Service Layer` be split into smaller, more focused modules?**
-  _Cohesion score 0.09 - nodes in this community are weakly interconnected._
-- **Should `Setup & Repository Intro` be split into smaller, more focused modules?**
-  _Cohesion score 0.08 - nodes in this community are weakly interconnected._
-- **Should `Frontend Setup Tutorials` be split into smaller, more focused modules?**
-  _Cohesion score 0.1 - nodes in this community are weakly interconnected._
-- **Should `Pro Code Generator` be split into smaller, more focused modules?**
-  _Cohesion score 0.13 - nodes in this community are weakly interconnected._
+- **Why does `Quick Start Guide` connect `Go Environment & Modules` to `go-admin Introduction & Features`, `Scheduled Jobs`, `Multi-tenant & Deployment`?**
+  _High betweenness centrality (0.059) - this node is a cross-community bridge._
+- **Why does `Top God Nodes (from GRAPH_REPORT)` connect `go-admin Introduction & Features` to `Go Environment & Modules`, `Fork Meta & Graphify Rules`?**
+  _High betweenness centrality (0.046) - this node is a cross-community bridge._
+- **Why does `api 模块` connect `Module Roots + Read Path (Get) + Swagger` to `Server Command & Config`, `Insert/Delete Path + User Audit Context`, `DTO & Search Module`, `DTO Foundations + Update Pipeline`?**
+  _High betweenness centrality (0.036) - this node is a cross-community bridge._
+- **Are the 2 inferred relationships involving `Backend settings.yml Configuration` (e.g. with `config/ Configuration Directory` and `.env.development / .env.production`) actually correct?**
+  _`Backend settings.yml Configuration` has 2 INFERRED edges - model-reasoned connections that need verification._
+- **What connects `graphify Rules for Claude Code`, `SpecKit Plan Reference`, `Yarn install/start/build workflow` to the rest of the system?**
+  _117 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `Fork Meta & Graphify Rules` be split into smaller, more focused modules?**
+  _Cohesion score 0.14 - nodes in this community are weakly interconnected._
+- **Should `go-admin Introduction & Features` be split into smaller, more focused modules?**
+  _Cohesion score 0.12 - nodes in this community are weakly interconnected._

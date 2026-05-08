@@ -1,19 +1,22 @@
 ---
 source_file: "docs/guide/xmbs.md"
 type: "document"
-community: "Multi-tenant & Deployment"
+community: "Community None"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Multi-tenant_&_Deployment
+  - community/Community_None
 ---
 
 # Production Deployment Guide
 
 ## Connections
-- [[Docker Packaging via make]] - `references` [EXTRACTED]
-- [[Nginx Configuration for go-admin]] - `references` [EXTRACTED]
-- [[Shell Script Packaging]] - `references` [EXTRACTED]
-- [[Vue Production Build & Upload]] - `references` [EXTRACTED]
+- [[.env.production VUE_APP_BASE_API]] - `references` [EXTRACTED]
+- [[Docker make build-linuxrundeploy]] - `references` [EXTRACTED]
+- [[Go Cross-compile (CGO_ENABLED=0)]] - `references` [EXTRACTED]
+- [[Nginx Reverse Proxy goadminapi - 8000]] - `references` [EXTRACTED]
+- [[Production settings.yml (databasejwtlogger)]] - `references` [EXTRACTED]
+- [[Shell-based Build & SCP Pipeline]] - `references` [EXTRACTED]
+- [[npm run buildprod]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Multi-tenant_&_Deployment
+#graphify/document #graphify/EXTRACTED #community/Community_None

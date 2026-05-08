@@ -1,11 +1,11 @@
 ---
 source_file: "docs/guide/go-modules.md"
 type: "document"
-community: "Go Environment & Modules"
+community: "Community None"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Go_Environment_&_Modules
+  - community/Community_None
 ---
 
 # Go 1.16 Module Changes
@@ -14,4 +14,4 @@ tags:
 - [[GO111MODULE=on]] - `references` [EXTRACTED]
 - [[Go Modules System]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Go_Environment_&_Modules
+#graphify/document #graphify/EXTRACTED #community/Community_None

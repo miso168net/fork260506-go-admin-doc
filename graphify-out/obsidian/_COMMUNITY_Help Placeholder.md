@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Help Page (placeholder)]] - document - docs/help.md
+- [[Help Page Placeholder]] - document - docs/help.md
 
 ## Live Query (requires Dataview plugin)
 

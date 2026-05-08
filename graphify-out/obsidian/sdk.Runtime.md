@@ -1,19 +1,21 @@
 ---
 source_file: "docs/intro/advanced/core.md"
-type: "document"
-community: "SDK Runtime Core"
+type: "code"
+community: "Community None"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/SDK_Runtime_Core
+  - community/Community_None
 ---
 
 # sdk.Runtime
 
 ## Connections
-- [[Memory Queue]] - `references` [EXTRACTED]
-- [[Runtime DB Map (GetDbGetDbByKeySetDb)]] - `references` [EXTRACTED]
-- [[SetConfigGetConfig]] - `references` [EXTRACTED]
-- [[User Context Helpers (GetUserIdNameRoleDept)]] - `references` [EXTRACTED]
+- [[QueueAdapter (SetGetRegister)]] - `references` [EXTRACTED]
+- [[Runtime DB APIs (GetDbGetDbByKeySetDb)]] - `references` [EXTRACTED]
+- [[Runtime.GetConfig]] - `references` [EXTRACTED]
+- [[Runtime.SetConfig]] - `references` [EXTRACTED]
+- [[user 上下文 API (GetUserIdGetUserNameGetRoleIdGetRoleKeyGetRoleNameGetDeptIdGetDeptName)]] - `conceptually_related_to` [INFERRED]
+- [[内存队列 (GetMemoryQueue)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SDK_Runtime_Core
+#graphify/code #graphify/EXTRACTED #community/Community_None
